@@ -6,13 +6,13 @@ describe Airplane do
 
   it 'has a flying status when created' do
       airplane
-      expect(airplane).to be_flyable
+      expect(airplane).to be_flying
   end
     
   it 'should be able to not have a flying status' do
       airplane
-      airplane.make_unflyable
-      expect(airplane).not_to be_flyable
+      airplane.stop_flying
+      expect(airplane).not_to be_flying
   end
 
 end

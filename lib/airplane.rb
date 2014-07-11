@@ -1,15 +1,15 @@
 class Airplane
 
 	def initialize
-		@flyable = true
+		@flying = true
 	end
 
-	def flyable? 
-		@flyable
+	def flying? 
+		@flying
 	end
 
-	def make_unflyable
-		@flyable = false
+	def stop_flying
+		@flying = false
 	end
 
 end
