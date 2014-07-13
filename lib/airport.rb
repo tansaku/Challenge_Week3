@@ -14,6 +14,7 @@ class Airport
 	end
 
 	def accept(plane)
+		raise "Airport is full" if full?
 		planes << plane
 	end
 
@@ -24,5 +25,11 @@ class Airport
 	def full?
 		plane_count == @capacity
 	end
+
+	# def change_airplane_status
+	# 	self.planes.each do |airplane|
+	# 		airplane.stop_flying
+	# 	end
+	# end
 
 end

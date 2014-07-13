@@ -8,8 +8,14 @@ class Airplane
 		@flying
 	end
 
-	def stop_flying
+	def landed
 		@flying = false
+		self
+	end
+
+	def take_off
+		@flying = true
+		self
 	end
 
 end
