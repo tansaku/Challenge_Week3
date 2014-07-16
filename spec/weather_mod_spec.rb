@@ -1,8 +1,8 @@
-require 'weather'
+require 'weather_mod'
 
-	describe Weather do
+describe Weather do
 
 	it 'should be flyable'
 
-	end
+end
 

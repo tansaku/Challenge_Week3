@@ -19,7 +19,6 @@ class Airplane
 	end
 
 	def free_for_landing?
-		if 
 	end
 
 end

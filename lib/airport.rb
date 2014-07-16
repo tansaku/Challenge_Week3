@@ -1,8 +1,9 @@
 class Airport
+	DEFAULT_CAPACITY = 50
 
 	def initialize(options = {})    
-  		@capacity = options.fetch(:capacity, DEFAULT_CAPACITY)
-  		@planes = []
+  	@capacity = options.fetch(:capacity, DEFAULT_CAPACITY)
+  	@planes = []
 	end
 
 	def planes
@@ -13,9 +14,13 @@ class Airport
 		planes.count
 	end
 
+
+
 	def accept(plane)
-		raise "Airport is full" if full?
-		planes << plane
+		if weather_condition == :sunny
+		  raise "Airport is full" if full?
+		  planes << plane
+		end
 	end
 
 	def reject(plane)
