@@ -18,4 +18,8 @@ class Airplane
 		self
 	end
 
+	def free_for_landing?
+		if 
+	end
+
 end
